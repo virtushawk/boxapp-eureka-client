@@ -55,10 +55,14 @@
     </dependencyManagement>
 
     <build>
+        <finalName>eurekasrv</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.virtushawk.boxappeurekaclient.BoxappEurekaClientApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
